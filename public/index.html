@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Letter Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Love Letter Generator</h1>
+      <form id="loveForm">
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Partner's Name"
+          required
+        />
+        <textarea
+          id="memory"
+          placeholder="A Special Memory Of Your Partner"
+          required
+        ></textarea>
+        <select id="tone">
+          <option value="romantic">Romantic</option>
+          <option value="playful">Playful</option>
+          <option value="poetic">Poetic</option>
+        </select>
+        <button type="submit">Generate Letter</button>
+      </form>
+      <div id="output" class="output"></div>
+      <!-- Hidden initially -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
